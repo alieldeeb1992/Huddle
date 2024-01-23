@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+}
+
+
+:root {
+    --first-color: #08262f;
+    --second-color: #f64ac1;
+}
+
+.nav-1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (min-width:576px) {
+    .container {
+        margin: 20px auto;
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        margin: 20px auto;
+        max-width: 720px;
+    }
+}
+
+
+
+@media (min-width:992px) {
+    .container {
+        margin: 20px auto;
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        margin: 20px auto;
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        margin: 20px auto;
+        max-width: 1320px;
+    }
+}
+
+
+
+.navbar {
+    margin: 30px 50px;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.btn-logo {
+    width: 150px;
+    outline: none;
+    border: 2px solid var(--second-color);
+    border-radius: 25px;
+    color: var(--second-color);
+    background-color: white;
+}
+
+.landing {
+    margin: 200px auto 100px;
+    text-align: center;
+}
+
+.landing .land h2 {
+    color: var(--first-color);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.landing .land p {
+    color: var(--first-color);
+    width: 50%;
+    margin: 20px auto;
+    line-height: 27px;
+}
+
+.btn-land {
+    width: 160px;
+    height: 44px;
+    border-radius: 25px;
+    border-color: var(--second-color);
+    outline: none;
+    border: 2px solid var(--second-color);
+    background-color: var(--second-color);
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+}
+
+.land-img {
+    margin-top: 100px;
+
+}
+
+.land-img img {
+    width: 100%;
+
+}
+
+.message {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.message .message .msg-logo {
+    width: 30px
+}
+
+.message h3 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: var(--first-color);
+}
+
+.message p {
+    color: #333;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.background {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    background-image: url(./images/bg-section-top-desktop-1.svg);
+    background-size: cover;
+    margin-bottom: 200px;
+}
+
+.background .grow {
+    width: 40%;
+    text-align: center;
+}
+
+.background .grow h3 {
+    text-transform: capitalize;
+    font-size: 34px;
+    color: var(--first-color);
+    margin-bottom: 38px;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.background .grow p {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #000000c2
+}
+
+.background .back-img {
+    width: 40%;
+}
+
+
+.background .back-img img {
+    width: 100%;
+}
+
+.ready {
+
+    text-align: center;
+}
+
+.ready h3 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: var(--first-color)
+}
+
+.ready button {
+    margin: 10px auto 200px;
+    width: 171px;
+    height: 38px;
+    border-radius: 25px;
+
+}
+
+.footer {
+    margin: 0;
+    background-color: #07252e;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: auto;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.foot-img {
+    width: 1440px;
+
+}
+
+.foot-img img {
+    width: 100vw;
+}
+
+.huddle {
+    margin-left: 20px;
+    flex-basis: 40%;
+}
+
+.huddle .foot-logo {
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+
+
+
+.huddle p:first-of-type {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+
+.huddle .phone i {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.huddle .phone p {
+    display: inline-block;
+}
+
+
+
+.huddle .mail i {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.huddle .mail p {
+    display: inline-block
+}
+
+
+
+.huddle .social i {
+    padding-right: 20px;
+}
+
+.newsletter {
+    flex-basis: 40%;
+}
+
+.newsletter h3 {
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 36px;
+    border-radius: 9px;
+    margin-right: 20px;
+}
+
+input[type="submit"] {
+    height: 36px;
+    border-radius: 9px;
+    width: 120px;
+    background-color: var(--second-color);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: var(--second-color);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+@media (max-width:768px) {
+    .background {
+        flex-direction: column;
+        flex-basis: 100vw;
+        text-align: center
+    }
+
+    .background .grow {
+        width: 100%;
+
+    }
+
+    .background .grow h3 {
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .huddle {
+        margin-bottom: 30px;
+    }
+
+    .newsletter {
+        margin-left: 20px;
+    }
+
+    input[type="text"] {
+        margin-bottom: 30px;
+    }
+
+    .landing .land h2 {
+        font-size: 20px;
+        margin: 30px;
+    }
+
+    .newsletter p {
+        font-size: 14px;
+    }
+
+
+}
